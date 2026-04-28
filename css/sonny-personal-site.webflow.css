@@ -1,0 +1,575 @@
+h1 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 38px;
+  line-height: 44px;
+  font-weight: 700;
+  text-align: center;
+}
+
+h4 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+p {
+  margin-bottom: 10px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  text-align: left;
+}
+
+a {
+  font-style: normal;
+  text-decoration: none;
+}
+
+.screenshotsdivblock {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  grid-auto-columns: 1fr;
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: auto auto;
+  grid-template-rows: auto auto;
+}
+
+.screenshotsdivblock._3x3 {
+  -ms-grid-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: auto auto auto;
+  grid-template-rows: auto auto auto;
+}
+
+.screenshotsdivblock._3x2 {
+  -ms-grid-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.image {
+  max-width: 20%;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+
+.image.dinogamplayimage {
+  max-width: 100%;
+  min-width: 100%;
+}
+
+.game-section {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 20px 3vw;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  background-color: rgba(119, 119, 119, 0.23);
+  text-align: left;
+}
+
+.game-section.paddles {
+  background-color: #f0ccab;
+}
+
+.game-section.dinoparty {
+  position: relative;
+  z-index: 0;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  background-color: #b5c6e6;
+}
+
+.game-section.misc {
+  background-color: #a1d497;
+}
+
+.game-section.frosty {
+  background-color: #ffaea5;
+}
+
+.gamecontentdivblock {
+  width: 100%;
+  max-width: 100%;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: hsla(0, 0%, 100%, 0.3);
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.15);
+}
+
+.body {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 30px 5vw 40px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-image: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(20%, hsla(0, 0%, 100%, 0.8)), color-stop(80%, hsla(0, 0%, 100%, 0.8)), to(transparent)), url('../images/PersonalSiteBackground.webp');
+  background-image: linear-gradient(90deg, transparent, hsla(0, 0%, 100%, 0.8) 20%, hsla(0, 0%, 100%, 0.8) 80%, transparent), url('../images/PersonalSiteBackground.webp');
+  background-position: 0px 0px, 0px 0px;
+  background-size: auto, 440px;
+  text-align: left;
+}
+
+.heading-2 {
+  margin-top: 0px;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+}
+
+.gamecardbuttonimage {
+  width: 100%;
+  max-height: 100%;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+
+.gamecardtab {
+  z-index: 1;
+  width: 20%;
+  height: 100px;
+  padding-right: 10px;
+  padding-left: 10px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.gamecardtab:hover {
+  height: 105px;
+  margin-top: -5px;
+}
+
+.gamecardtab.w--current {
+  height: 110px;
+  margin-top: -10px;
+  margin-bottom: 0px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.gamecardtab.gamejams {
+  background-color: #9ad693;
+}
+
+.gamecardtab.frosty {
+  background-color: #ffaea5;
+}
+
+.gamecardtab.paddles {
+  background-color: #f0ccab;
+}
+
+.gamecardtab.dinoparty {
+  background-color: #b5c6e6;
+}
+
+.tabs-menu {
+  z-index: 2;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 95vw;
+  max-width: 1000px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+
+.tabs-content {
+  z-index: 1;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px 1px rgba(0, 0, 0, 0.3);
+}
+
+.iconimage {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 1px 1px 20px 0 rgba(0, 0, 0, 0.26);
+}
+
+.gameiconbutton {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 200px;
+  height: 220px;
+  margin-top: 8px;
+  margin-bottom: -15px;
+  padding: 10px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+  border-radius: 20px;
+  background-color: hsla(0, 0%, 100%, 0.3);
+  box-shadow: 1px 1px 20px 2px rgba(0, 0, 0, 0.15);
+  color: #333;
+  font-style: normal;
+  text-decoration: none;
+}
+
+.div-block {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 230px;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.image-2 {
+  width: 200px;
+  margin-top: 40px;
+}
+
+.heading-4 {
+  margin-right: -100px;
+  margin-bottom: 30px;
+  color: hsla(0, 0%, 100%, 0.3);
+  font-size: 40px;
+}
+
+.tabs {
+  width: 95vw;
+  max-width: 1000px;
+  padding-top: 20px;
+}
+
+.hellosection {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 95%;
+  max-width: 800px;
+  margin-bottom: 15px;
+  padding: 10px 20px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 20px;
+  background-color: #bfe5ff;
+  box-shadow: 0 9px 20px 1px rgba(0, 0, 0, 0.3);
+}
+
+.allsoftwaredivblock {
+  display: block;
+  width: 100%;
+  padding: 10px 5px;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  border-radius: 20px;
+  background-color: hsla(0, 0%, 100%, 0.3);
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+.softwaregroupdivblock {
+  display: block;
+  padding-right: 20px;
+  padding-left: 20px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 20px;
+  background-color: hsla(0, 0%, 100%, 0.3);
+  text-align: center;
+}
+
+.softwaredivblock {
+  overflow: visible;
+  width: 80px;
+  height: 100px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+}
+
+.div-block-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+
+.column {
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.image-3 {
+  border-style: solid;
+  border-width: 10px;
+  border-color: hsla(0, 0%, 100%, 0.3);
+  border-radius: 50%;
+  box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+.div-block-4 {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.div-block-5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+
+.rich-text-block {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  text-align: left;
+}
+
+.softwaretagtext {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.heading-5 {
+  padding-bottom: 10px;
+}
+
+.clickforinfotext {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+}
+
+.clickforinfotext.comingsoon {
+  font-size: 15px;
+}
+
+.gameicondivblock {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 200px;
+  height: 220px;
+  margin-top: 8px;
+  margin-bottom: -15px;
+  padding: 10px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+  border-radius: 20px;
+  background-color: hsla(0, 0%, 100%, 0.3);
+  box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.15);
+}
+
+.slider {
+  display: none;
+}
+
+.paragraphcenteralligned {
+  text-align: center;
+}
+
+@media screen and (max-width: 479px) {
+  .screenshotsdivblock {
+    grid-column-gap: 2px;
+    grid-row-gap: 2px;
+  }
+
+  .gamecontentdivblock {
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+  }
+
+  .body {
+    padding-top: 30px;
+    padding-bottom: 40px;
+    background-image: url('../images/PersonalSiteBackground.webp');
+    background-position: 0px 0px;
+    background-size: 220px;
+  }
+
+  .tabs-content {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+  }
+
+  .tabs {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100vw;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .hellosection {
+    padding-right: 10px;
+    padding-left: 10px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .heading-5 {
+    font-size: 30px;
+  }
+
+  .heading-6 {
+    font-size: 16px;
+  }
+}
